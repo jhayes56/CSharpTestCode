@@ -21,7 +21,7 @@ namespace listBlobStorage
             string storageConnectionString = Console.ReadLine();
 
             var storageConnect = CloudStorageAccount.Parse(storageConnectionString);
-            CloudBlobClient blob = torageConnect.CreateCloudBlobClient();
+            CloudBlobClient blob = storageConnect.CreateCloudBlobClient();
             
 
             Console.WriteLine("Enter container name");
